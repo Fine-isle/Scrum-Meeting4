@@ -1,0 +1,17 @@
+/* pages/map/map.wxss */
+/**index.wxss**/
+button {
+    position:relative;
+    display:block;
+    font-size:15px;
+    text-align:center;
+    border-radius:5px;
+    color:#0164ab;
+    background-color:#ffffff;
+    margin: 15rpx;
+    padding:10rpx;
+    box-shadow:0px 2px 4px 2px #DDDDDD;
+    border-width: 0rpx;
+    border-radius:15rpx;
+    overflow:hidden;
+}

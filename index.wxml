@@ -1,0 +1,42 @@
+<import src="HotNewsCell/HotNewsCell.wxml" />
+<import src="GridIconCell/GridIconCell.wxml" />
+
+<!--index.wxml-->
+<view> 
+<view class="demo">
+  <image src="/images/wu.jpeg" class="demo"></image>
+</view>
+  <view class="iconList-container">
+    <block wx:for="{{iconList}}" wx:for-item="item" wx:for-index="idx" wx:key="key">
+      <view class="iconList-container-block" catchtap="tapGridCell" data-icon-id="{{idx}}">
+        <template is="GridIconCell" data="{{...item}}"></template>
+      </view>
+    </block>
+  </view>
+  <view class="spaceSeparateView"></view>
+  <view class="yaowen-container">
+    <text class="yaowen">三公开</text>
+  </view>
+  <view class="news" data-newsid="1001" bindtap="showDetail">
+   <view class="pic-words">
+    <view class="news-title title-words">“听党话，感恩党，跟党走”宣讲活动</view>
+    <image src="./image/en.png" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">莲花村</view>
+       <view class="create-time">2022-2-22 12:20:21</view>
+    </view>
+  </view>
+
+  <view class="news" data-newsid="1002" bindtap="showDetail">
+   <view class="pic-words">
+    <view class="news-title title-words">“听党话，感恩党，跟党走”宣讲活动</view>
+    <image src="./image/en.png" class="cover"></image>
+   </view>
+    <view class="publish">
+       <view class="publisher">莲花村</view>
+       <view class="create-time">2022-2-22 12:20:21</view>
+    </view>
+  </view>
+ 
+</view>
